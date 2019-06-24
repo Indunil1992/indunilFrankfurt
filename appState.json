@@ -22,7 +22,7 @@
         "children": [],
         "isRemovable": true,
         "filePath": "indunilFrankfurt/lambda.js",
-        "code": "exports.handler = function(event, context, callback) {\n    \n    \n    callback(null, {\"message\": \"Successfully executed\"});\n}",
+        "code": "exports.handler = function(event, context, callback) {\n\n    \n    callback(null, {\"message\": \"Successfully eeee executed\"});\n}",
         "config": {
           "runtime": "nodejs8.10",
           "handler": "handler",
@@ -32,7 +32,7 @@
         },
         "triggers": [
           {
-            "resourceName": "apigeuCentral1frankfurtindunilhead",
+            "resourceName": "apigeuCentral1frankfurtindunilany",
             "config": {}
           }
         ]
@@ -57,6 +57,25 @@
           "resourceName": "indunil",
           "resourcePath": "/indunil",
           "restMethod": "HEAD",
+          "proxyIntegration": false,
+          "enableCORS": false,
+          "stageMode": 0,
+          "stageName": "test",
+          "mode": 0
+        }
+      },
+      "apigeuCentral1frankfurtindunilany": {
+        "name": "apigeuCentral1frankfurtindunilany",
+        "type": "API_GATEWAY",
+        "config": {
+          "selectedRegion": "eu-central-1",
+          "apiMode": 0,
+          "apiName": "frankfurt",
+          "endpointType": "EDGE",
+          "resourceMode": 0,
+          "resourceName": "indunil",
+          "resourcePath": "/indunil",
+          "restMethod": "ANY",
           "proxyIntegration": false,
           "enableCORS": false,
           "stageMode": 0,
@@ -90,7 +109,7 @@
     "projectRegion": "eu-central-1",
     "platform": "AWS",
     "platformRegions": {},
-    "lastSave": 1561377784010
+    "lastSave": 1561378029385
   },
   "VCS_STATE": {
     "provider": "GitHub",
