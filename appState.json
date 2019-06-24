@@ -1,0 +1,102 @@
+{
+  "EDITOR_STATE": {
+    "allProjectFiles": {
+      "4ac197cf-3553-4998-b99e-1b16363eb0ed": {
+        "id": "4ac197cf-3553-4998-b99e-1b16363eb0ed",
+        "parent": null,
+        "name": "indunilFrankfurt",
+        "type": "DIRECTORY",
+        "isDirectory": true,
+        "children": [
+          "f2cfde0d-35ee-4674-b4ac-4d137f152adc"
+        ],
+        "isRemovable": false,
+        "filePath": "indunilFrankfurt"
+      },
+      "f2cfde0d-35ee-4674-b4ac-4d137f152adc": {
+        "id": "f2cfde0d-35ee-4674-b4ac-4d137f152adc",
+        "parent": "4ac197cf-3553-4998-b99e-1b16363eb0ed",
+        "name": "lambda.js",
+        "type": "JS_LAMBDA",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "indunilFrankfurt/lambda.js",
+        "code": "exports.handler = function(event, context, callback) {\n    \n    \n    callback(null, {\"message\": \"Successfully executed\"});\n}",
+        "config": {
+          "runtime": "nodejs8.10",
+          "handler": "handler",
+          "timeout": 60,
+          "memory": 128,
+          "layers": []
+        },
+        "triggers": [
+          {
+            "resourceName": "apigeuCentral1frankfurtindunilhead",
+            "config": {}
+          }
+        ]
+      }
+    },
+    "deletedFiles": [],
+    "rootNode": "4ac197cf-3553-4998-b99e-1b16363eb0ed",
+    "openFiles": [
+      "f2cfde0d-35ee-4674-b4ac-4d137f152adc"
+    ],
+    "currentFileId": "f2cfde0d-35ee-4674-b4ac-4d137f152adc",
+    "resources": {
+      "apigeuCentral1frankfurtindunilhead": {
+        "name": "apigeuCentral1frankfurtindunilhead",
+        "type": "API_GATEWAY",
+        "config": {
+          "selectedRegion": "eu-central-1",
+          "apiMode": 0,
+          "apiName": "frankfurt",
+          "endpointType": "EDGE",
+          "resourceMode": 0,
+          "resourceName": "indunil",
+          "resourcePath": "/indunil",
+          "restMethod": "HEAD",
+          "proxyIntegration": false,
+          "enableCORS": false,
+          "stageMode": 0,
+          "stageName": "test",
+          "mode": 0
+        }
+      }
+    },
+    "customTemplate": {
+      "dialect": null,
+      "definitions": {}
+    },
+    "envVariables": [
+      {
+        "lambdaId": "all",
+        "varKey": "SIGMA_AWS_ACC_ID",
+        "varValue": null,
+        "shouldPersist": false,
+        "displayOnly": false,
+        "editable": false
+      }
+    ],
+    "packageJSON": {
+      "dependencies": {}
+    }
+  },
+  "PROJECT_META": {
+    "projectName": "indunilFrankfurt",
+    "projectDescription": "indunilFrankfurt",
+    "projectVersion": "1.0.0",
+    "projectRegion": "eu-central-1",
+    "platform": "AWS",
+    "platformRegions": {},
+    "lastSave": 1561377784010
+  },
+  "VCS_STATE": {
+    "provider": "GitHub",
+    "repo": {
+      "name": "indunilFrankfurt",
+      "url": "https://github.com/Indunil1992/indunilFrankfurt"
+    }
+  }
+}
