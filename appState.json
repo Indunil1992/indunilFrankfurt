@@ -1,30 +1,29 @@
 {
   "EDITOR_STATE": {
     "allProjectFiles": {
-      "4ac197cf-3553-4998-b99e-1b16363eb0ed": {
-        "id": "4ac197cf-3553-4998-b99e-1b16363eb0ed",
+      "5e19dbf1-8ea6-408e-9f78-dfb3336093ab": {
+        "id": "5e19dbf1-8ea6-408e-9f78-dfb3336093ab",
         "parent": null,
         "name": "indunilFrankfurt",
         "type": "DIRECTORY",
         "isDirectory": true,
         "children": [
-          "f2cfde0d-35ee-4674-b4ac-4d137f152adc"
+          "a73e94ed-a6e2-490b-aba8-1d2ae1b9818b"
         ],
         "isRemovable": false,
         "filePath": "indunilFrankfurt"
       },
-      "f2cfde0d-35ee-4674-b4ac-4d137f152adc": {
-        "id": "f2cfde0d-35ee-4674-b4ac-4d137f152adc",
-        "parent": "4ac197cf-3553-4998-b99e-1b16363eb0ed",
+      "a73e94ed-a6e2-490b-aba8-1d2ae1b9818b": {
+        "id": "a73e94ed-a6e2-490b-aba8-1d2ae1b9818b",
+        "parent": "5e19dbf1-8ea6-408e-9f78-dfb3336093ab",
         "name": "lambda.js",
         "type": "JS_LAMBDA",
         "isDirectory": false,
         "children": [],
         "isRemovable": true,
         "filePath": "indunilFrankfurt/lambda.js",
-        "code": "exports.handler = function(event, context, callback) {\n\n    \n    callback(null, {\"message\": \"Successfully eeee executed\"});\n}",
         "config": {
-          "runtime": "nodejs8.10",
+          "runtime": "nodejs10.x",
           "handler": "handler",
           "timeout": 60,
           "memory": 128,
@@ -32,61 +31,59 @@
         },
         "triggers": [
           {
-            "resourceName": "apigeuCentral1frankfurtindunilany",
+            "resourceName": "apigeuCentral1californiacheckget",
             "config": {}
           }
-        ]
+        ],
+        "testCases": {
+          "f35ef472-3694-448a-ad35-55ec1cb29604": {
+            "id": "f35ef472-3694-448a-ad35-55ec1cb29604",
+            "name": "Test event",
+            "functionId": "a73e94ed-a6e2-490b-aba8-1d2ae1b9818b",
+            "event": "{\r\n    \"key1\": \"value1\",\r\n    \"key2\": \"value2\",\r\n    \"key3\": \"value3\"\r\n}",
+            "eventTemplate": "hello-world"
+          }
+        }
       }
     },
-    "deletedFiles": [],
-    "rootNode": "4ac197cf-3553-4998-b99e-1b16363eb0ed",
+    "rootNode": "5e19dbf1-8ea6-408e-9f78-dfb3336093ab",
     "openFiles": [
-      "f2cfde0d-35ee-4674-b4ac-4d137f152adc"
+      "a73e94ed-a6e2-490b-aba8-1d2ae1b9818b"
     ],
-    "currentFileId": "f2cfde0d-35ee-4674-b4ac-4d137f152adc",
+    "currentFileId": "a73e94ed-a6e2-490b-aba8-1d2ae1b9818b",
     "resources": {
-      "apigeuCentral1frankfurtindunilhead": {
-        "name": "apigeuCentral1frankfurtindunilhead",
+      "apigeuCentral1californiacheckget": {
+        "name": "apigeuCentral1californiacheckget",
         "type": "API_GATEWAY",
         "config": {
           "selectedRegion": "eu-central-1",
-          "apiMode": 0,
-          "apiName": "frankfurt",
-          "endpointType": "EDGE",
-          "resourceMode": 0,
-          "resourceName": "indunil",
-          "resourcePath": "/indunil",
-          "restMethod": "HEAD",
+          "apiMode": 1,
+          "apiName": "california",
+          "apiId": "p8eirhyd7k",
+          "endpointType": "REGIONAL",
+          "rootResourceId": "vi6xlt1lei",
+          "existingResources": {
+            "/check/cal": "batevx",
+            "/check": "pcpvxf",
+            "/": "vi6xlt1lei"
+          },
+          "resourceMode": 1,
+          "resourcePath": "/check",
+          "resourceName": "check",
+          "resourceId": "pcpvxf",
+          "restMethod": "GET",
           "proxyIntegration": false,
           "enableCORS": false,
-          "stageMode": 0,
+          "stageMode": 1,
           "stageName": "test",
-          "mode": 0
-        }
-      },
-      "apigeuCentral1frankfurtindunilany": {
-        "name": "apigeuCentral1frankfurtindunilany",
-        "type": "API_GATEWAY",
-        "config": {
-          "selectedRegion": "eu-central-1",
-          "apiMode": 0,
-          "apiName": "frankfurt",
-          "endpointType": "EDGE",
-          "resourceMode": 0,
-          "resourceName": "indunil",
-          "resourcePath": "/indunil",
-          "restMethod": "ANY",
-          "proxyIntegration": false,
-          "enableCORS": false,
-          "stageMode": 0,
-          "stageName": "test",
-          "mode": 0
+          "stageDeploymentId": "hafesv",
+          "mode": 1
         }
       }
     },
     "customTemplate": {
       "dialect": null,
-      "definitions": {}
+      "definitions": null
     },
     "envVariables": [
       {
@@ -104,12 +101,12 @@
   },
   "PROJECT_META": {
     "projectName": "indunilFrankfurt",
-    "projectDescription": "indunilFrankfurt",
+    "projectDescription": "",
     "projectVersion": "1.0.0",
     "projectRegion": "eu-central-1",
     "platform": "AWS",
     "platformRegions": {},
-    "lastSave": 1561378029385
+    "lastSave": 1581497853402
   },
   "VCS_STATE": {
     "provider": "GitHub",

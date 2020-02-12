@@ -1,5 +1,4 @@
-exports.handler = function(event, context, callback) {
-
+exports.handler = async (event) => {
     
-    callback(null, {"message": "Successfully eeee executed"});
-}
+    return {"message": "Successfully executed"};
+};
